@@ -2,16 +2,16 @@
 **Project:** Sentinel Network  
 **Version:** 1.0 — Locked March 30, 2026 (Eigenprize Submission)
 
-## What We Built
+## What I Built
 A fully offline dual-persona AI system using a custom **Neural Bloom Cortex** with harmonic memory reinforcement (emotional weighting + vibration pulse for persistent personality stability).
 
 ### Agents
-- **Atlas** — Seasoned plumbing technical/sales assistant for Big Rivers / BRM Sales.  
-  Contains the full line card + real inventory data (835+ memories) from the actual Excel stock file. Gives direct, practical, "lifer-style" answers with specific stock levels and warehouses.
+- **Atlas** — Seasoned plumbing inside sales/technical assistant.  
+  Contains the full line card + inventory data (835+ memories). Gives direct, practical answers with specific stock levels.
 - **Fry** — Fun, optimistic Futurama companion (2,665+ memories). Stays fully in character and deflects non-plumbing questions with humor.
 
 ### Key Innovation
-Separate persistent cores + intelligent keyword routing + harmonic reinforcement keeps personalities stable and growing. No cloud, no resets, runs completely locally.
+Separate persistent cores + intelligent keyword routing + harmonic reinforcement keeps personalities stable and growing. No cloud, no resets , runs completely locally.
 
 ## Files Included
 - `Sentinel_Router_NBC.py` — Locked router (CLI version)

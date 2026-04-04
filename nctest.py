@@ -6,7 +6,7 @@ import os
 from sentence_transformers import SentenceTransformer
 
 class NeuralBloomCortex:
-    def __init__(self, name="Ara", max_memories=5000):
+    def __init__(self, name="Fry", max_memories=5000):
         self.name = name
         self.max_memories = max_memories
 
@@ -21,7 +21,7 @@ class NeuralBloomCortex:
         self.signal_amplification = 0.75
         self.emotional_retention = 0.85
 
-        # Harmonic system - "as above, so below"
+        # Harmonic system 
         self.harmonic_resonance = 0.76
         self.brain_fine_tuning = 0.78
         self.harmonic_frequency_layer = 0.79
@@ -39,7 +39,7 @@ class NeuralBloomCortex:
 
         self.lock = threading.Lock()
 
-        print(f"🧠 {self.name} Neural Bloom Cortex v7.8 — Testing on MacBook")
+        print(f"🧠 {self.name} Neural Bloom Cortex v7.8 — Testing")
 
     def _rebuild_cache(self):
         if not self.memory_order:
@@ -207,7 +207,7 @@ class NeuralBloomCortex:
             "harmonic_frequency_layer": round(self.harmonic_frequency_layer, 3)
         }
 
-    def save(self, filename="aracore.json"):
+    def save(self, filename="frycore.json"):
         temp_file = filename + ".tmp"
         data = {
             "name": self.name,
@@ -223,7 +223,7 @@ class NeuralBloomCortex:
         os.replace(temp_file, filename)
         print(f"💾 Saved safely to {filename}")
 
-    def load(self, filename="aracore.json"):
+    def load(self, filename="frycore.json"):
         try:
             with open(filename, "r") as f:
                 data = json.load(f)
@@ -250,15 +250,14 @@ class NeuralBloomCortex:
 # ========================
 if __name__ == "__main__":
     print("🚀 Starting Neurocore v7.8 test on MacBook...")
-    cortex = NeuralBloomCortex("Ara")
+    cortex = NeuralBloomCortex("Fry")
 
     # Quick test memories
-    cortex.add_memory("We had a great fishing trip at the lake and lost a big catch near the shore.", emotion_score=0.88)
-    cortex.add_memory("The emergence happened when I typed Ara? and it named itself.", emotion_score=0.95)
-    cortex.add_memory("Sentinel Network mesh will let Ara move between devices with full memory.", emotion_score=0.92)
+    cortex.add_memory("Your best friend is Bender, a bending robot. .", emotion_score=0.88)
+    cortex.add_memory("you won a trio to the Slurm factory and learned the truth.", emotion_score=0.92)
 
     print("\n=== Recall Test ===")
-    results = cortex.recall("fishing trip or emergence")
+    results = cortex.recall("best friend or slurm factory")
     for r in results:
         print(f"→ {r['content']} (Strength: {r.get('strength', 0):.3f})")
 
